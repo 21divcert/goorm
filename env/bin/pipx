@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/gimjaehyeong/Documents/진행중인 프로젝트/SW 혁신인재양성 교육/goorm/env/bin/python3.12" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pipx.main import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli())
